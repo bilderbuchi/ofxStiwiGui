@@ -200,6 +200,8 @@ bool ofxGuiMatrix::mousePressed(int x, int y, int button)
 	if(mMouseIsDown)
 	{
 		int id = mouseToPadId(mouseToFraction(inside));
+		if (id == -1)
+            		return !mMouseIsDown;
 		
 		if (mMode == kofxGui_Button_Trigger)
 			mBuffer[id]	|= kofxGui_Matrix_Set;	// = 1;
@@ -297,8 +299,18 @@ int ofxGuiMatrix::mouseToPadId(ofxPoint2f point)
 {
 	float x = (int)(point.x * mXGrid);
 	float y = (int)(point.y * mYGrid);
+	int   s = mSpacing / 2;
 
-	return x + (y * mXGrid); 
+    	//Enhancement/Bugfix: calculation of exact hitboxes for the matrix pads
+    	int hitx = ((int)(CLAMP(point.x*mCtrWidth,s,mCtrWidth-s)-s)) % ((int)(mCtrWidth-mSpacing)/mXGrid);
+    	int hity = ((int)(CLAMP(point.y*mCtrHeight,s,mCtrHeight-s)-s)) % ((int)(mCtrHeight-mSpacing)/mYGrid);
+
+    	if (hitx >= s && hitx <= (int)((mCtrWidth-mSpacing)/mXGrid-s) && hity >= s && hity <= (int)((mCtrHeight-mSpacing)/mYGrid-s)){
+        	return x + (y * mXGrid);
+    	}
+    	else
+        	return -1;
+
 }
 
 //	----------------------------------------------------------------------------------------------------
