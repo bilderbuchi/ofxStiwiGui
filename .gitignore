@@ -1,0 +1,6 @@
+
+#build/
+#obj/
+
+#linux temporary files
+*~

@@ -1,0 +1,60 @@
+<install>
+
+	<version>20100117</version>
+	<author>stiwi,simongeilfus</author>
+	<url></url>
+
+	<requires>
+		<addon>ofxXmlSettings</addon>
+		<addon>ofxVectorMath</addon>
+		<addon>ofxDirList</addon>
+	</requires>
+    
+	<add>	
+		<src>
+			<folder name="addons/ofxGui/src">			
+				<file>../../../addons/ofxGui/src/ofxGui.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGui.h</file>
+				<file>../../../addons/ofxGui/src/ofxGuiApp.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiButton.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiButton.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiColor.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiColor.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiFiles.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiFiles.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiGlobals.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiGlobals.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiKnob.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiKnob.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiMatrix.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiMatrix.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiObject.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiObject.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiPanel.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiPanel.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiPoints.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiPoints.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiRadar.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiRadar.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiScope.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiScope.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiSlider.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiSlider.h</file>
+				<file>../../../addons/ofxGui/src/ofxGuiTypes.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiXYPad.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiXYPad.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiMovable.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiMovable.h</file>
+			</folder>            
+		</src>
+
+		<include>
+			<path>../../../addons/ofxGui/src</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>
