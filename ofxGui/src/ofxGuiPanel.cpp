@@ -318,6 +318,29 @@ ofxGuiKnob* ofxGuiPanel::addKnob(int id, string name, int width, int height, flo
 
 //	----------------------------------------------------------------------------------------------------
 
+ofxGuiRadar* ofxGuiPanel::addRadar(int id, string name, int width, int height, float min, float max, float value, int display, int steps)
+{
+	//	todo
+	return NULL;
+}
+
+//	----------------------------------------------------------------------------------------------------
+
+ofxGuiSwitch* ofxGuiPanel::addSwitch(int id, string name, int width, int height, int min, int max, int value, const string* paramStrings)
+{
+	int offset = (mObjects.size() == 0 && mParamName == "") ? 0 : mSpacing;
+	
+	ofxGuiSwitch* swtch = new ofxGuiSwitch();
+	swtch->init(id, name, mBorder, mObjHeight - mBorder + offset, width, height, min, max, value, paramStrings);
+	mObjects.push_back(swtch);
+	
+	adjustToNewContent(swtch->mObjWidth, swtch->mObjHeight + offset);
+	
+	return swtch;
+}
+
+//	----------------------------------------------------------------------------------------------------
+
 void ofxGuiPanel::adjustToNewContent(int width, int height)
 {
 	if(width > mObjWidth - mBorder * 2)
@@ -442,6 +465,17 @@ void ofxGuiPanel::buildFromXml()
 				
 				ofxGuiKnob* knob = addKnob(id, name, width, height, min, max, value, display, steps);
 				knob->buildFromXml();
+			}
+			else if(type == "SWITCH")
+			{
+				float	min		= mGlobals->mXml.getValue("MIN", 0.0f);
+				float	max		= mGlobals->mXml.getValue("MAX", 0.0f);
+				float	value	= mGlobals->mXml.getValue("VALUE", 0.0f);
+				
+				//	const string* strings = 
+				
+				ofxGuiSwitch* swtch = addSwitch(id, name, width, height, min, max, value, NULL);
+				swtch->buildFromXml();
 			}
 			
 			mGlobals->mXml.popTag();
