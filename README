@@ -4,9 +4,11 @@ ofxGui, a simple GUI addon for openFrameworks
 
 licensed under the GPL license (as per stiwi's wish)
 Original author: Stefan Kirch/stiwi, alphakanal.de
-Modifications (as far as as I can tell) by simongeilfus,andyli
+Modifications (as far as as I can tell) by simongeilfus,andyli,bilderbuchi
 
 This source version is based on andyli's version, adapted of OF0061, from http://www.openframeworks.cc/forum/viewtopic.php?f=10&t=461&start=105.
+
+The new switch element is included and working in the GUI, but events etc is not working (no updates in the console, e.g.)
 
 
 
