@@ -1,6 +1,6 @@
 <install>
 
-	<version>20100117</version>
+	<version>20100713</version>
 	<author>stiwi,simongeilfus</author>
 	<url></url>
 
@@ -27,7 +27,9 @@
 				<file>../../../addons/ofxGui/src/ofxGuiKnob.cpp</file>
 				<file>../../../addons/ofxGui/src/ofxGuiKnob.h</file>			
 				<file>../../../addons/ofxGui/src/ofxGuiMatrix.cpp</file>
-				<file>../../../addons/ofxGui/src/ofxGuiMatrix.h</file>			
+				<file>../../../addons/ofxGui/src/ofxGuiMatrix.h</file>	
+				<file>../../../addons/ofxGui/src/ofxGuiMovable.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiMovable.h</file>		
 				<file>../../../addons/ofxGui/src/ofxGuiObject.cpp</file>
 				<file>../../../addons/ofxGui/src/ofxGuiObject.h</file>			
 				<file>../../../addons/ofxGui/src/ofxGuiPanel.cpp</file>
@@ -40,11 +42,11 @@
 				<file>../../../addons/ofxGui/src/ofxGuiScope.h</file>			
 				<file>../../../addons/ofxGui/src/ofxGuiSlider.cpp</file>
 				<file>../../../addons/ofxGui/src/ofxGuiSlider.h</file>
+				<file>../../../addons/ofxGui/src/ofxGuiSwitch.cpp</file>
+				<file>../../../addons/ofxGui/src/ofxGuiSwitch.h</file>
 				<file>../../../addons/ofxGui/src/ofxGuiTypes.h</file>			
 				<file>../../../addons/ofxGui/src/ofxGuiXYPad.cpp</file>
 				<file>../../../addons/ofxGui/src/ofxGuiXYPad.h</file>			
-				<file>../../../addons/ofxGui/src/ofxGuiMovable.cpp</file>
-				<file>../../../addons/ofxGui/src/ofxGuiMovable.h</file>
 			</folder>            
 		</src>
 
