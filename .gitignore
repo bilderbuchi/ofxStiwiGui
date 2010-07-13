@@ -1,6 +1,14 @@
 
-#build/
-#obj/
+build/
+obj/
+*.o
+
+#codeblocks files
+*/*.layout
+*/*.depend
+*/bin/clickToLaunch*
+*/bin/libs
+*/obj
 
 #linux temporary files
 *~

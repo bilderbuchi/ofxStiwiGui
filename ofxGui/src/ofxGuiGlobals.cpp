@@ -37,13 +37,13 @@ ofxGuiGlobals::ofxGuiGlobals()
 {
 	mXmlfile			= "";
 
-	mHeadFontName		= "verdana.ttf";
+	mHeadFontName		= "fonts/verdana.ttf";
 	mHeadFontSize		= 12;
 	mHeadFontXOffset	= -2;
 	mHeadFontYOffset	= 8;
 	mHeadFontHeight		= 12;
 
-	mParamFontName		= "automat.ttf";
+	mParamFontName		= "fonts/automat.ttf";
 	mParamFontSize		= 8;
 	mParamFontXOffset	= -2;
 	mParamFontYOffset	= 6;

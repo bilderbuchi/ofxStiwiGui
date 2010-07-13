@@ -26,8 +26,8 @@ void testApp::setupGui(){
 	ofxGuiPanel	*buttonsAndMatrix = gui->addPanel(0, "Buttons&Matrix", 215, 20, 12, OFXGUI_PANEL_SPACING);
 	buttonsAndMatrix->addButton(triggerButton, "triggerButton", 10, 10, kofxGui_Button_Off, kofxGui_Button_Trigger, "");
 	buttonsAndMatrix->addButton(switchButton, "switchButton", 10, 10, kofxGui_Button_Off, kofxGui_Button_Switch, "");
-	buttonsAndMatrix->addMatrix(matrix, "matrix", 125, 125, 5, 5, 0, kofxGui_Matrix_Set, 2);
-	buttonsAndMatrix->addFiles(files,"files", 125, 20, "Gotham-Black.otf", "fonts/", "otf");
+	buttonsAndMatrix->addMatrix(matrix, "matrix", 125, 125, 5, 5, 0, kofxGui_Matrix_Set, 6);
+	buttonsAndMatrix->addFiles(files,"files", 125, 20, "verdana.ttf", "fonts/", "ttf");
 
 	ofxGuiPanel	*pointsAndScope = gui->addPanel(0, "Points&Scope", 380, 20, 12, OFXGUI_PANEL_SPACING);
 	pointsAndScope->addPoints(points, "points", 255, 60, ofxPoint2f(0.0f, 0.0f), ofxPoint2f(100.0, 1.0), ofxPoint2f(0.5f, 0.0f), kofxGui_Display_Float2, 0.1);
