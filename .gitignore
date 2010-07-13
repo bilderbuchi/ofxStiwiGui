@@ -8,6 +8,8 @@ obj/
 */*.depend
 */bin/clickToLaunch*
 */bin/libs
+*/bin/*_debug
+*/bin/*_release
 */obj
 
 #linux temporary files
