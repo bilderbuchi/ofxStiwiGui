@@ -37,7 +37,7 @@ void testApp::setupGui(){
 	buttonsAndMatrix->addButton(switchButton, "switchButton", 10, 10, kofxGui_Button_Off, kofxGui_Button_Switch, "");
 	buttonsAndMatrix->addMatrix(matrix, "matrix", 125, 125, 5, 5, 0, kofxGui_Matrix_Set, 6);
 	buttonsAndMatrix->addFiles(files,"files", 125, 20, "verdana.ttf", "fonts/", "ttf");
-	//[bb] This by me, the new Switch works in the GUI so far, events - not so much:
+	//[bb] This by me, the new Switch works in the GUI so far, and reports to console:
 	buttonsAndMatrix->addSwitch(swtch, "switch test", 125, 25, 0, 3, 0, &dummy_Tags[0]);
 
 	ofxGuiPanel	*pointsAndScope = gui->addPanel(0, "Points&Scope", 380, 20, 12, OFXGUI_PANEL_SPACING);
@@ -118,6 +118,11 @@ void testApp::handleGui(int parameterId, int task, void* data, int length){
 		case xyPad:
 			if (task == kofxGui_Set_Point){
 				cout<<"xyPad value : "<<(*(ofxPoint2f*)data).x<<" "<<(*(ofPoint*)data).y<<endl;
+			}
+			break;
+		case swtch:
+			if(length == sizeof(int)){
+				cout<<"Switch value : "<<dummy_Tags[*(int*)data]<<endl;
 			}
 			break;
 	}
