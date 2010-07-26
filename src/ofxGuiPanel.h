@@ -37,6 +37,8 @@
 #include "ofxGuiMatrix.h"
 #include "ofxGuiScope.h"
 #include "ofxGuiKnob.h"
+#include "ofxGuiRadar.h"
+#include "ofxGuiSwitch.h"
 
 //	----------------------------------------------------------------------------------------------------
 
@@ -64,7 +66,9 @@ public:
 	ofxGuiColor*	addColor(int id, string name, int width, int height, ofRGBA value, int mode);
 	ofxGuiMatrix*	addMatrix(int id, string name, int width, int height, int xGrid, int yGrid, int value, int mode, int spacing);
 	ofxGuiScope*	addScope(int id, string name, int width, int height, int length, ofxPoint2f value, int mode);
-	ofxGuiKnob*		addKnob(int id, string name, int width, int height, float min, float max, float value, int display, int steps);
+	ofxGuiKnob*	addKnob(int id, string name, int width, int height, float min, float max, float value, int display, int steps);
+	ofxGuiRadar*	addRadar(int id, string name, int width, int height, float min, float max, float value, int display, int steps);
+	ofxGuiSwitch*	addSwitch(int id, string name, int width, int height,  int min, int max, int value, const string* paramStrings);	
 	
 	void			adjustToNewContent(int w, int h);
 

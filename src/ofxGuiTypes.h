@@ -35,7 +35,7 @@
 
 //	----------------------------------------------------------------------------------------------------
 
-#define OFXGUI_VERSION			"0.06"
+#define OFXGUI_VERSION			"0.11" //tentative versioning; bilderbuchi
 #define OFXGUI_XML				"ofxGui.xml"
 
 #define OFXGUI_PANEL_BORDER		10
@@ -62,7 +62,8 @@ static const char* kofxGui_Tags[] =
 	"MATRIX",
 	"SCOPE",
 	"KNOB",
-	"RADAR"
+	"RADAR",
+	"SWITCH",
 };
 
 enum
@@ -79,6 +80,7 @@ enum
 	kofxGui_Object_Scope,
 	kofxGui_Object_Knob,
 	kofxGui_Object_Radar,
+	kofxGui_Object_Switch,
 };
 
 enum
