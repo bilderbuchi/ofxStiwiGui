@@ -21,7 +21,7 @@ enum {
 	scope,
 	slider,
 	xyPad,
-	swtch,
+	swtch
 };
 
 void testApp::setupGui(){
